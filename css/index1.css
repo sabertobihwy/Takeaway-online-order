@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.upper{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item{
+    display: flex;
+    height: 16%;
+    width: 70%;
+    align-items: center;
+     border-bottom: 1px solid #999;
+} 
+
+
+.goods-list{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    overflow-y: auto;
+}
+
+.goods-item{
+    display: flex;
+    height: 25%;
+    border-bottom: 1px solid #999;
+}
+
+.goods-item img{
+    width: 30%;
+    object-fit: cover;
+}
+
+.goods-item .rightbox{
+    width: 70%;
+
+}
+
+.goods-info{
+    height: 60%;
+    padding: 0 20px;
+}
+.goods-title{
+    font-size: 16px;
+    margin: 5px;
+
+}
+
+.goods-desc {
+    font-size: 12px;
+    color: #160101;
+    margin: 2px 0;
+    height: 50%;
+    overflow: hidden;
+}
+
+.goods-sell {
+    margin-top: 3px;
+    font-size: 12px;
+    color: #999;
+}
+
+.goods-confirm{
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer{
+    display: flex;
+    height: 50px;
+    background-color: #3e4042;
+    justify-content: space-between;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.footer-car-container{
+    display: flex;
+    width:70%;
+}
+
+.footer-car-container .footer-car{
+    width: 30%;
+}
+
+.footer-car-price{
+    font-size: 19px;
+}
+
+.footer-car-container .footer-price .footer-car-tip{
+    font-size: 11px;
+    color: #999;
+}
+
+.footer-pay{
+    display: flex;
+    width:30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 185, 44);
+}
+
+.footer-pay a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 16px;
+}
+
+.footer-pay span{
+    display: none;
+}
