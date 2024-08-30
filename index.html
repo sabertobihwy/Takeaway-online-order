@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/iconfont.css">
+    <!-- <link rel="stylesheet" href="./css/iconfontcss/iconfont.css"> -->
     <link rel="stylesheet" href="./css/index1.css">
 </head>
 <body>
@@ -25,9 +25,12 @@
     <div class="footer">
         <div class="footer-car-container">
             <div class="footer-car">
-                <!-- <i class="iconfont icon-gouwuchefill"></i> -->
-                <span class="footer-car-badge">0</span>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-gouwuchefill"></use>
+                  </svg>
+                  <span class="footer-car-badge">0</span>
             </div>
+            
 
             <div class="footer-price">
                 <div class="footer-car-price">
@@ -40,11 +43,11 @@
 
         
         <div class="footer-pay">
-            <a href="#">去结算</a>
-            <span>还差¥0元起送</span>
+            <a href="#" class="inactive">去结算</a>
+            <span class="active">还差¥0元起送</span>
         </div>
     </div>
-    
+<script src="./css/iconfontcss/iconfont.js"></script>
 <script src="./js/data.js"></script>
 <script src="./js/index.js"></script>
 </body>

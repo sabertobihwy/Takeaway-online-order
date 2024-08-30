@@ -89,7 +89,9 @@ class UI{
         for(var i = 0; i< this.UIGoods.goodsList.length; i++){
             var g = this.UIGoods.goodsList[i]
             html += `<div class="goods-item">
+            <div class= "leftbox">
             <img src="${g.data.pic}" alt="" class="goods-pic" />
+            </div>
             <div class= "rightbox">
             <div class="goods-info">
                 <h2 class="goods-title">${g.data.title}</h2>
@@ -104,11 +106,15 @@ class UI{
                     <span class="goods-price-unit">¥</span>
                     ${g.data.price}
                 </p>
-                <div class="goods-btns">
-                    <i class="iconfont i-jianhao"></i>
+                <p class="goods-btns">
+                   <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jianhao"></use>
+                  </svg>
                     <span>${g.number}</span>
-                    <i class="iconfont i-jiahao"></i>
-                </div>
+                    <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiahao"></use>
+                  </svg>
+                </p>
             </div>
             </div>
         </div>`

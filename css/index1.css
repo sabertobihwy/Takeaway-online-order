@@ -4,6 +4,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
 .upper{
     display: flex;
     width: 100%;
@@ -40,32 +48,50 @@ body{
     border-bottom: 1px solid #999;
 }
 
-.goods-item img{
+.leftbox{
     width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goods-item img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     object-fit: cover;
 }
 
 .goods-item .rightbox{
+    flex-direction: column;
     width: 70%;
 
 }
 
 .goods-info{
-    height: 60%;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px;
+    height: 70%;
 }
 .goods-title{
+    font-weight: bold;
     font-size: 16px;
-    margin: 5px;
+    margin: 8px;
 
 }
 
 .goods-desc {
-    font-size: 12px;
+    font-size: 13px;
     color: #160101;
     margin: 2px 0;
-    height: 50%;
+    height: 40%;
     overflow: hidden;
+}
+
+.goods-price{
+    color: rgb(231, 124, 24);
+    font-weight: bold;
 }
 
 .goods-sell {
@@ -76,11 +102,12 @@ body{
 
 .goods-confirm{
     display: flex;
-    height: 20%;
+    height: 30%;
     justify-content: space-between;
     padding: 0 20px;
 }
 
+/* footer */
 .footer{
     display: flex;
     height: 50px;
@@ -96,11 +123,42 @@ body{
 }
 
 .footer-car-container .footer-car{
-    width: 30%;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    background-color: rgb(92, 139, 226);
+    display: flex; /* 让内容在圆内水平和垂直居中 */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #3e4042;
+}
+.footer-car svg{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.footer-car-badge{
+    position: absolute;
+    right:-5px;
+    top: -1px;
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 50%;
+    background-color: red;
+    display: flex; /* 让内容在圆内水平和垂直居中 */
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }
 
 .footer-car-price{
     font-size: 19px;
+}
+.footer-price{
+    padding-left: 100px;
 }
 
 .footer-car-container .footer-price .footer-car-tip{
@@ -123,6 +181,14 @@ body{
     font-size: 16px;
 }
 
-.footer-pay span{
+/* effect */
+.active{
+    display: block;
+}
+.inactive{
     display: none;
+}
+
+svg:hover{
+    cursor: pointer;
 }

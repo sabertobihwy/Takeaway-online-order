@@ -1,0 +1,30 @@
+{
+  "id": "4667699",
+  "name": "takeaway",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "577340",
+      "name": "购物车-fill",
+      "font_class": "gouwuchefill",
+      "unicode": "e73c",
+      "unicode_decimal": 59196
+    },
+    {
+      "icon_id": "6536706",
+      "name": "减号",
+      "font_class": "jianhao",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "7727117",
+      "name": "1加号",
+      "font_class": "jiahao",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    }
+  ]
+}
