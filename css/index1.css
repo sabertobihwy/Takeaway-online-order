@@ -184,13 +184,33 @@ body{
 }
 
 /* effect */
-.active{
-    display: block;
-}
 .inactive{
-    display: none;
+    display: none !important;
 }
 
 svg:hover{
     cursor: pointer;
 }
+
+@keyframes footer-car-animate {
+    0% {
+      transform: scale(1);   /* 初始大小 */
+    }
+    25% {
+      transform: scale(0.8); /* 缩小到 80% */
+    }
+    50% {
+      transform: scale(1.1); /* 放大到 110% */
+    }
+    75% {
+      transform: scale(0.9); /* 缩小到 90% */
+    }
+    100% {
+      transform: scale(1);   /* 回到初始大小 */
+    }
+  }
+
+  .animate {
+    animation: footer-car-animate 1s; /* 动画名称、时长、无限循环 */
+  }
+  
